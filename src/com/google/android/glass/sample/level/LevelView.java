@@ -66,13 +66,17 @@ public class LevelView extends View {
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         int width = canvas.getWidth();
-        int height = canvas.getHeight() / 2;
+        int height = canvas.getHeight();
 
         // Compute the coordinates.
-        float y = (float) Math.tan(mAngle) * width / 2;
+        float y = (float) Math.tan(mAngle) * width/2;
+        float x = (float) Math.tan(mAngle) * height/2;
 
         // Draw the level line.
-        canvas.drawLine(0, y + height, width, -y + height, mPaint);
+        canvas.drawLine(0, (height/2) + y, width, (height/2) - y, mPaint);
+        
+        // Draw a line perpendicular to the level line
+        canvas.drawLine((width/2) - x, 0, (width/2) + x, height, mPaint);
     }
 
 }

@@ -17,8 +17,8 @@
 <resources>
 
     <!-- Launch-related strings. -->
-    <string name="app_name">Level Sample</string>
-    <string name="show_demo_voice_trigger">show me a demo</string>
+    <string name="app_name">Glass Level</string>
+    <string name="show_demo_voice_trigger">Show level</string>
 
     <!-- Menu item strings. -->
     <string name="stop">Stop</string>
